@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E236F70B-8981-4A62-8BCF-32BE2055ABC3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Recept2</RootNamespace>
+    <AssemblyName>Recept2</AssemblyName>
+    <ApplicationIcon>Resources\tools-icon-recipes.ico</ApplicationIcon>
+    <PublishUrl>http://localhost/Recept2/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>Recept2.Program</StartupObject>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\kirill\AppData\Roaming\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>install\recept2Pair.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <ReleaseVersion>0.9</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExtLibs\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataBaseComparer.cs" />
+    <Compile Include="DataMicroBiology.cs" />
+    <Compile Include="DataMicroBiologyIndicator.cs" />
+    <Compile Include="PanelConfigReport.cs" />
+    <Compile Include="PanelConfigReport.Designer.cs">
+      <DependentUpon>PanelConfigReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SortableBindingList.cs" />
+    <Compile Include="CommonStructures.cs" />
+    <Compile Include="Controls\ComboBoxFilter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBase.cs" />
+    <Compile Include="DataBaseEventArgs.cs" />
+    <Compile Include="DataBook.cs" />
+    <Compile Include="CommonFunctions.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="DataLock.cs" />
+    <Compile Include="DataProviderEventArgs.cs" />
+    <Compile Include="DataTotalLoss.cs" />
+    <Compile Include="DPodbc.cs" />
+    <Compile Include="DPsqlite.cs" />
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCompare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompare.Designer.cs">
+      <DependentUpon>FormCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig.Designer.cs">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCounter.cs" />
+    <Compile Include="FormDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDB.Designer.cs">
+      <DependentUpon>FormDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPreview.Designer.cs">
+      <DependentUpon>FormPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReg.Designer.cs">
+      <DependentUpon>FormReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelBookdata.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelBookdata.Designer.cs">
+      <DependentUpon>PanelBookdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelBrowse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelBrowse.Designer.cs">
+      <DependentUpon>PanelBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelReceptFactor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelReceptFactor.Designer.cs">
+      <DependentUpon>PanelReceptFactor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelTotalLossData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelTotalLossData.Designer.cs">
+      <DependentUpon>PanelTotalLossData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelRawData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelRawData.Designer.cs">
+      <DependentUpon>PanelRawData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelReceptData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelReceptData.Designer.cs">
+      <DependentUpon>PanelReceptData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelReceptProcess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelReceptProcess.Designer.cs">
+      <DependentUpon>PanelReceptProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelReceptView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelReceptView.Designer.cs">
+      <DependentUpon>PanelReceptView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCompare.resx">
+      <DependentUpon>FormCompare.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig.resx">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDB.resx">
+      <DependentUpon>FormDB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPreview.resx">
+      <DependentUpon>FormPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReg.resx">
+      <DependentUpon>FormReg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelBookdata.resx">
+      <DependentUpon>PanelBookdata.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelBrowse.resx">
+      <DependentUpon>PanelBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelConfigReport.resx">
+      <DependentUpon>PanelConfigReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelReceptFactor.resx">
+      <DependentUpon>PanelReceptFactor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelTotalLossData.resx">
+      <DependentUpon>PanelTotalLossData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelRawData.resx">
+      <DependentUpon>PanelRawData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelReceptData.resx">
+      <DependentUpon>PanelReceptData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelReceptProcess.resx">
+      <DependentUpon>PanelReceptProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelReceptView.resx">
+      <DependentUpon>PanelReceptView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="DataRaw.cs" />
+    <Compile Include="DataRecept.cs" />
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="ViewModeStruct.cs" />
+    <None Include="Resources\print-16x16.gif" />
+    <None Include="Resources\Save-16x16.gif" />
+    <None Include="Resources\book-icon.jpg" />
+    <None Include="Resources\open-48x48.png" />
+    <None Include="Resources\save-48x48.png" />
+    <None Include="Resources\about-48x48.png" />
+    <None Include="Resources\new-48x48.png" />
+    <None Include="Resources\48x48-add.png" />
+    <None Include="Resources\48x48-remove.png" />
+    <None Include="Resources\settings-14x14.gif" />
+    <None Include="Resources\tools-icon-recipes.gif" />
+    <None Include="Resources\add-48x48.png" />
+    <None Include="Resources\delete-48x48.png" />
+    <None Include="Resources\icon_printer.gif" />
+    <None Include="Resources\insert.gif" />
+    <None Include="Resources\icon_html.gif" />
+    <None Include="Resources\icon_word_rtf.gif" />
+    <None Include="Resources\tools-icon-recipes.ico" />
+    <None Include="Resources\48x48-copy.png" />
+    <None Include="Resources\icon_reload.gif" />
+    <Content Include="ExtLibs\sqlite3.dll" />
+    <Content Include="ExtLibs\System.Data.SQLite.dll" />
+    <None Include="Resources\icon_sort_asc.png" />
+    <None Include="Resources\icon_sort_dec.png" />
+    <Content Include="version.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TreeGridView\ExpandableGridView.csproj">
+      <Project>{2EFE526F-79B3-49BC-9575-A7B258C59BB5}</Project>
+      <Name>ExpandableGridView</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio />
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recept2", "Recept2\Recept2.csproj", "{E236F70B-8981-4A62-8BCF-32BE2055ABC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "install", "install", "{839D9B9C-0E5E-45AF-BA4F-52B496E0B878}"
+	ProjectSection(SolutionItems) = preProject
+		Recept2\install\components.mdb = Recept2\install\components.mdb
+		Recept2\install\components.sqlite = Recept2\install\components.sqlite
+		Recept2\install\License.txt = Recept2\install\License.txt
+		Recept2\install\registerExtension.nsh = Recept2\install\registerExtension.nsh
+		Recept2\install\script.nsi = Recept2\install\script.nsi
+		Recept2\install\pandoc-1.2-setup.exe = Recept2\install\pandoc-1.2-setup.exe
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpandableGridView", "TreeGridView\ExpandableGridView.csproj", "{2EFE526F-79B3-49BC-9575-A7B258C59BB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BagTracking", "BagTracking", "{A21A3242-EABC-43D6-8677-E4E49A137309}"
+	ProjectSection(SolutionItems) = preProject
+		Recept2\BagTracking\error1.txt = Recept2\BagTracking\error1.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EFE526F-79B3-49BC-9575-A7B258C59BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EFE526F-79B3-49BC-9575-A7B258C59BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EFE526F-79B3-49BC-9575-A7B258C59BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EFE526F-79B3-49BC-9575-A7B258C59BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E236F70B-8981-4A62-8BCF-32BE2055ABC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E236F70B-8981-4A62-8BCF-32BE2055ABC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E236F70B-8981-4A62-8BCF-32BE2055ABC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E236F70B-8981-4A62-8BCF-32BE2055ABC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		version = 0.9
+		StartupItem = Recept2\Recept2.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+		$0.VersionControlPolicy = $2
+		$2.inheritsSet = Mono
+		$0.StandardHeader = $3
+		$3.inheritsSet = MITX11License
+		$0.ChangeLogPolicy = $4
+		$4.UpdateMode = None
+		$4.MessageStyle = $5
+		$5.LineAlign = 0
+		$4.inheritsSet = Mono
+		$0.TextStylePolicy = $6
+		$6.FileWidth = 120
+		$6.TabWidth = 4
+		$6.inheritsSet = Mono
+		$6.inheritsScope = text/plain
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
